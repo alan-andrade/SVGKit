@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <SVGKit/SVGKit.h>
 
 //! Project version number for SVGKit-iOS-Framework.
 FOUNDATION_EXPORT double SVGKit_iOS_FrameworkVersionNumber;
@@ -15,5 +16,3 @@ FOUNDATION_EXPORT double SVGKit_iOS_FrameworkVersionNumber;
 FOUNDATION_EXPORT const unsigned char SVGKit_iOS_FrameworkVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <SVGKit_iOS_Framework/PublicHeader.h>
-
-
