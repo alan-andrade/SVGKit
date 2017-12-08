@@ -225,8 +225,7 @@
 		9ED79A24179D87790048AA5B /* SVGGradientLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ED79A22179D87790048AA5B /* SVGGradientLayer.h */; };
 		9ED79A25179D87790048AA5B /* SVGGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ED79A23179D87790048AA5B /* SVGGradientLayer.m */; };
 		E76F244D1FD8CB81009AD2F8 /* SVGKit-iOS-Framework.h in Headers */ = {isa = PBXBuildFile; fileRef = E76F244B1FD8CB81009AD2F8 /* SVGKit-iOS-Framework.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E7EF5D3C1FDA0AE600473D72 /* libSVGKit-iOS.1.1.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6639618E16145D0400E58CCA /* libSVGKit-iOS.1.1.0.a */; };
-		E7EF5D3D1FDA0AFB00473D72 /* SVGKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 66E8638E1688C2780059C9C4 /* SVGKit.h */; };
+		E7EF5D3D1FDA0AFB00473D72 /* SVGKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 66E8638E1688C2780059C9C4 /* SVGKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -495,7 +494,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E7EF5D3C1FDA0AE600473D72 /* libSVGKit-iOS.1.1.0.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
