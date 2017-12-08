@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <SVGKit/SVGKit.h>
+#import <SVGKit/SVGKit.h
 
 //! Project version number for SVGKit-iOS-Framework.
 FOUNDATION_EXPORT double SVGKit_iOS_FrameworkVersionNumber;
