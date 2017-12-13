@@ -346,6 +346,11 @@
 		E7B908E31FDA18EA0090A4C5 /* DDTTYLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 00E86D5B1741586600F0FA0A /* DDTTYLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E7B908E51FDA18EA0090A4C5 /* ContextFilterLogFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 00E86D5E1741586600F0FA0A /* ContextFilterLogFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E7B908E71FDA18EA0090A4C5 /* DispatchQueueLogFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 00E86D601741586600F0FA0A /* DispatchQueueLogFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E7C02FAF1FE0AD4000CA8F09 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6639619116145D0400E58CCA /* Foundation.framework */; };
+		E7C02FB21FE0ADB500CA8F09 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7C02FB11FE0ADB500CA8F09 /* UIKit.framework */; };
+		E7C02FB31FE0ADBC00CA8F09 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6639634616148DEC00E58CCA /* CoreGraphics.framework */; };
+		E7C02FB41FE0ADE400CA8F09 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6639634116148CDF00E58CCA /* QuartzCore.framework */; };
+		E7C02FB61FE0ADF300CA8F09 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7C02FB51FE0ADF300CA8F09 /* CoreText.framework */; };
 		E7EF5D3D1FDA0AFB00473D72 /* SVGKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 66E8638E1688C2780059C9C4 /* SVGKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -598,6 +603,8 @@
 		E76F24491FD8CB81009AD2F8 /* SVGKitiOSFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SVGKitiOSFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E76F244B1FD8CB81009AD2F8 /* SVGKit-iOS-Framework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SVGKit-iOS-Framework.h"; sourceTree = "<group>"; };
 		E76F244C1FD8CB81009AD2F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E7C02FB11FE0ADB500CA8F09 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E7C02FB51FE0ADF300CA8F09 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -615,6 +622,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7C02FB61FE0ADF300CA8F09 /* CoreText.framework in Frameworks */,
+				E7C02FB41FE0ADE400CA8F09 /* QuartzCore.framework in Frameworks */,
+				E7C02FB31FE0ADBC00CA8F09 /* CoreGraphics.framework in Frameworks */,
+				E7C02FB21FE0ADB500CA8F09 /* UIKit.framework in Frameworks */,
+				E7C02FAF1FE0AD4000CA8F09 /* Foundation.framework in Frameworks */,
 				E7B908111FDA18D40090A4C5 /* libSVGKit-iOS.1.1.0.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -696,6 +708,8 @@
 		6639619016145D0400E58CCA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E7C02FB51FE0ADF300CA8F09 /* CoreText.framework */,
+				E7C02FB11FE0ADB500CA8F09 /* UIKit.framework */,
 				6639633F16145DDC00E58CCA /* libxml2.dylib */,
 				6639634616148DEC00E58CCA /* CoreGraphics.framework */,
 				6639634116148CDF00E58CCA /* QuartzCore.framework */,
@@ -1502,7 +1516,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Lei Lei (JV5Y7A3TGE)";
@@ -1529,7 +1542,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Lei Lei (JV5Y7A3TGE)";
@@ -1595,7 +1607,6 @@
 		E76F244F1FD8CB81009AD2F8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LIBRARY = "libc++";
@@ -1632,8 +1643,16 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(BUILD_DIR)/$(CONFIGURATION)-Universal",
+				);
 				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+					"-lxml2",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.lumosity.SVGKit-iOS-Framework";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -1647,7 +1666,6 @@
 		E76F24501FD8CB81009AD2F8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LIBRARY = "libc++";
@@ -1685,7 +1703,16 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(BUILD_DIR)/$(CONFIGURATION)-Universal",
+				);
 				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+					"-lxml2",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.lumosity.SVGKit-iOS-Framework";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
